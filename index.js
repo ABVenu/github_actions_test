@@ -7,6 +7,10 @@ app.use(express.json())
 app.get("/", (req,res)=>{
     res.status(200).json({msg:"This is test route"})
 })
+
+app.get("/home", (req,res)=>{
+    res.status(200).json({msg:"This is home route"})
+})
 app.listen(PORT, ()=>{
     console.log("Server started on Port", PORT)
 })
